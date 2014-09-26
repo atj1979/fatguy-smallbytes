@@ -1,0 +1,64 @@
+body {
+	max-width:1000px;
+}
+.topRight{
+	
+	float:right;
+}
+.companies {
+	height:50px;
+	width:auto;
+
+
+}
+
+
+.tableData {
+
+	height:50px;
+	vertical-align:middle;
+	text-align:center;
+	
+	width:230px;
+}
+#topTable {
+	position:static;
+
+}
+#bottomTable{
+
+	font-family: 'Lato', sans-serif;
+	opacity:1;
+	z-index:-1;
+	position:fixed;
+	
+	
+}
+
+.centerPic {
+	float:center;
+	width: 200px;
+	height: 200px;
+	border-radius:500px;
+	border
+}
+
+.bottomLeft{
+	horizontal-align:left;
+	vertical-align:bottom;
+	position:left;
+}
+.moreAbout {
+	font-size: 20px;
+}
+#imgCarousel {
+
+	width: 200px;
+	height: 200px;
+}
+
+.Arrow {
+	height:100px;
+	width:auto;
+	vertical-align: middle;
+}

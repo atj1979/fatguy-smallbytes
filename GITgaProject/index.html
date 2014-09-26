@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<script src="js/jquery111min.js" type="text/javascript"></script>
+<html>
+<head>
+
+
+</head>
+<body max-width=900px>
+
+
+<div class="moreAbout">More about you Section
+<img class="topRight" src="Pic/RaidersEmblem.jpg" align="right" align="top" vertical-align="top"></div>
+<div>Experience</div>
+I've taken just a few coureses concerning html and CSS.  
+Not that impressive.
+I have been working as a full time Field Engineer for GE.  
+I've coordinated the maintenance, repair as well as designed and implemented  mondifications to many High Voltage systems at companies like:
+<table class="Table" id="topTable">
+	<tbody>
+	<tr>
+		<td class="tableData"><img class="companies" src="Pic/AMAZONsymbol.jpg"></td>
+		<td class="tableData"><img class="companies" src="Pic/GEsymbol.png"></td>
+		<td class="tableData"><img class="companies" src="Pic/CHEVRONsymbol.gif"></td>
+	</tr>
+	<tr>
+		<td class="tableData"><img class="companies" src="Pic/INTELsymbol.png"></td>
+		<td class="tableData"><img class="companies" src="Pic/PGEsymbol.jpg"></td>
+		<td class="tableData"><img class="companies" src="Pic/SHELLsymbol.jpg"></td>
+	</tr>
+	<tr>
+		<td class="tableData"><img class="companies" src="Pic/VERIZONsymbol.png"></td>
+		<td class="tableData"><img class="companies" src="Pic/CORESITEsymbol.jpg"></td>
+		<td class="tableData"><img class="companies" src="Pic/DIGITALREALTYsymbol.jpg"></td>
+	</tr>
+	</tbody>
+</table>
+
+
+
+<table class="Table" id="bottomTable" boarder="5px">
+	<tbody>
+	<td>
+		<tr>
+			<td class="tableData">Amazon</td>
+			<td class="tableData">GE</td>
+			<td class="tableData">Chevron</td>
+		</tr>
+	</td>
+	<td>
+		<tr>
+			<td class="tableData">Intel</td>
+			<td class="tableData">PG&E</td>
+			<td class="tableData">Shell</td>
+		</tr>
+	</td>
+	<td>
+		<tr>
+			<td class="tableData">Verizon</td>
+			<td class="tableData">Coresite</td>
+			<td class="tableData">Digital Realty</td>
+		</tr>
+	</td>
+	</tbody> 
+	</table>
+	
+</table>
+<div>Contact Info</div>
+
+
+
+
+
+
+
+
+
+
+
+<img  class="centerPic" src="Pic/myPic.jpg" align="center" vertical-align="middle">
+<br>
+
+
+
+
+<div>
+<img class="bottomLeft" src="Pic/GSWEmblem.jpg" >
+
+<!--Podcast Slider-->
+<span id="podcastPic">
+<span>
+<img class="Arrow" id="leftArrow" src="pic/larrow.jpg">
+<img id="imgCarousel" src="Pic/BillBurrMMPodcast.jpg">
+<img class="Arrow" id="rightArrow" src="pic/rarrow.jpg">
+</span>
+<img class="shadow" src="Pic/shadow.jpg"></div>
+</span></div>
+</body>
+</html>
+
+<script>
+
+
+
+
+
+
+//Execute JavaScript after html is downloaded
+$(document).ready(function() {
+	
+	//Amazing Disappearing reappearing Logos
+	$("img.companies").hover(
+		function(){
+		$(this).fadeTo("slow", 0);
+	},
+		function(){
+		$(this).fadeTo("fast",1);
+	});
+
+	//get top table position
+	var x = $("table#topTable").position();
+	//set top table position equal to bottom table
+	$("table#bottomTable").css({"left":x.left,"top":x.top});
+	
+	//array of pictures
+	var podcast = ["Pic/AriShaffirSkepticTank.jpg", "Pic/BillBurrMMPodcast.jpg","Pic/ChampsPodcast.jpg"];
+});
+
+
+
+
+
+
+
+</script>
