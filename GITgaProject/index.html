@@ -1,111 +1,131 @@
 <!DOCTYPE html>
-<!-- no opening html or head tags? -->
-<!-- indent code to make it more readable -->
-<link href="style.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'><!-- write a comment, what is this? -->
-<script src="js/jquery111min.js" type="text/javascript"></script><!-- scripts should be loaded last -->
+<!--Build a brand new single-page "About Me" website for yourself inside this new repository, using what you learned from Dash about HTML, CSS, and JavaScript. Your JavaScript code should go inside <script></script> tags inside the <head></head> section of your HTML file; however, your CSS styling should be implemented through an external style sheet. Make sure to include:
+
+A section telling us more about you, your experience, and your contact information.
+A picture of you in the center of the page, and two additional images with captions (one placed in the top right of your page, and one place in the bottom left).
+An image carousel, with at least 3 images, written in JavaScript. Feel free to use outside resources in addition to the Dash tutorial, and don't be afraid to experiment - have fun with it! DO NOT copy & paste the code. We expect you to be prepared to talk about the code you've written and explain to us how you approached the problem during the technical portion of the interview. -->
+
 <html>
 <head>
-<!-- move import links into the head, review html5 spec -->
-<!-- include a title tag here -->
+
+<link href="style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<script src="js/jquery111min.js" type="text/javascript"></script>
+
 </head>
-<body max-width=900px><!-- You always need double=quotes on HTML attributes! -->
-<!-- max-width should not be specified in the markup, use the css for this -->
-
-<div class="moreAbout">More about you Section
-<!-- all single tags, line img, br, hr must be closed! -->
-<img class="topRight" src="Pic/RaidersEmblem.jpg" align="right" align="top" vertical-align="top"/></div>
-
-<div>Experience</div><!-- make this an h2 instead? -->
-I've taken just a few coureses concerning HTML and CSS.
-I'm McLovin it!
-I have been working as a full time Field Engineer for GE.
-I've coordinated the maintenance, repair as well as designed and implemented  mondifications to many High Voltage systems at companies like:
-<!-- perfect place for a ul/li example -->
-<table class="Table" id="topTable">
-	<tbody>
-	<tr>
-		<td class="tableData"><img class="companies" src="Pic/AMAZONsymbol.jpg"/></td>
-		<td class="tableData"><img class="companies" src="Pic/GEsymbol.png"/></td>
-		<td class="tableData"><img class="companies" src="Pic/CHEVRONsymbol.gif"/></td>
-	</tr>
-	<tr>
-		<td class="tableData"><img class="companies" src="Pic/INTELsymbol.png"/></td>
-		<td class="tableData"><img class="companies" src="Pic/PGEsymbol.jpg"/></td>
-		<td class="tableData"><img class="companies" src="Pic/SHELLsymbol.jpg"/></td>
-	</tr>
-	<tr>
-		<td class="tableData"><img class="companies" src="Pic/VERIZONsymbol.png"/></td>
-		<td class="tableData"><img class="companies" src="Pic/CORESITEsymbol.jpg"/></td>
-		<td class="tableData"><img class="companies" src="Pic/DIGITALREALTYsymbol.jpg"/></td>
-	</tr>
-	</tbody>
-</table>
+<body max-width=960px >
 
 
+<div>
+	<img id="topRight" src="Pic/RaidersEmblem.jpg" align="right" align="top" vertical-align="top">
+		<a href src="http://www.yahoo.com/">	
+			<h2 id="topRightText">Oakland Raiders Website</h2>
+		</a>
+</div>
+<h1>Anthony Johnson</h1>
+<h2>Experience</h2>
+<p id="experience">I've taken just a few courses concerning html and CSS.<br>  
+Not that impressive.<br>
+I have been working as a full time Field Engineer for GE.<br>  
+I've coordinated the maintenance, repair as well as <br>
+designed and implemented  mondifications to many High <br>
+Voltage systems at companies like:</p>
+	<table class="Tables" id="topTable" >
+		<tbody>
+			
+			<tr>
+				<td class="tableData"><img class="companies" src="Pic/AMAZONsymbol.jpg"></td>
+				<td class="tableData"><img class="companies" src="Pic/GEsymbol.png"></td>
+				<td class="tableData"><img class="companies" src="Pic/CHEVRONsymbol.gif"></td>
+			</tr>
+			<tr>
+				<td class="tableData"><img class="companies" src="Pic/INTELsymbol.png"></td>
+				<td class="tableData"><img class="companies" src="Pic/PGEsymbol.jpg"></td>
+				
+			</tr>
+			<tr>
+				<td class="tableData"><img class="companies" src="Pic/VERIZONsymbol.png"></td>
 
-<table class="Table" id="bottomTable" boarder="5px">
-	<tbody>
-	<td>
-		<tr>
-			<td class="tableData">Amazon</td>
-			<td class="tableData">GE</td>
-			<td class="tableData">Chevron</td>
-		</tr>
-	</td>
-	<td>
-		<tr>
-			<td class="tableData">Intel</td>
-			<td class="tableData">PG&E</td>
-			<td class="tableData">Shell</td>
-		</tr>
-	</td>
-	<td>
-		<tr>
-			<td class="tableData">Verizon</td>
-			<td class="tableData">Coresite</td>
-			<td class="tableData">Digital Realty</td>
-		</tr>
-	</td>
-	</tbody>
+				
+				
+			</tr>
+			<tr>
+				<td class="tableData"><img class="companies" src="Pic/DIGITALREALTYsymbol.jpg"></td> 
+				<td class="tableData"><img class="companies" src="Pic/SHELLsymbol.jpg"></td>
+				
+			</tr>
+			<tr>
+				<td class="tableData"><img class="companies" src="Pic/CORESITEsymbol.jpg"></td>
+				<td class="tableData"><img class="companies" src="Pic/HPsymbol.jpg"></td>
+				<td class="tableData"><img class="companies" src="Pic/EBMUDsymbol.jpg"></td>
+
+			</tr>
+			
+		</tbody>
 	</table>
+	<table class="Tables" id="bottomTable">
+		<tbody>
+			
+			<tr>
+				<td class="tableData">Amazon</td>
+				<td class="tableData">GE</td>
+				<td class="tableData">Chevron</td>
+			</tr>
+			<tr>
+				<td class="tableData">Intel</td>
+				<td class="tableData">PG&E</td>
+				
+			</tr>
+			<tr>
+				<td class="tableData">Verizon</td>
+				
+				
+			</tr>
+			<tr>
+				<td class="tableData">Digital Realty</td>
+				<td class="tableData">Shell</td>
+			</tr>
+			<tr>
+				<td class="tableData">Coresite</td>
+				<td class="tableData">hp</td>
+				<td class="tableData">EBMUD</td>
+			</tr>
 
-</table>
-<div>Contact Info</div><!-- make this an h2 instead? -->
+			
+		</tbody> 
+	</table>	
 
+<div class="contactDiv">
+<h2>Contact Info</h2>
+<p class="contactInfo"><a href="mailto:atj1979@gmail.com">Email: atj1979@gmail.com</a></p>
+<p class="contactInfo"><a href="http://www.github.com">Github: atj1979/fatguy-smallbytes</a></p>
+</div>
+<div>
 
-
-
-
-
-
-
-
-
-
-<img  class="centerPic" src="Pic/myPic.jpg" align="center" vertical-align="middle"/>
+<img  class="centerPic" src="Pic/myPic.jpg" align="center" vertical-align="middle">
+</div>
 <br>
 
 
 
 
 <div>
-<img class="bottomLeft" src="Pic/GSWEmblem.jpg"/>
+
 
 <!--Podcast Slider-->
-<span id="podcastPic">
-<span>
-<img class="Arrow" id="leftArrow" src="pic/larrow.jpg"/>
-<img id="imgCarousel" src="Pic/BillBurrMMPodcast.jpg"/>
-<img class="Arrow" id="rightArrow" src="pic/rarrow.jpg"/>
-</span>
-<img class="shadow" src="Pic/shadow.jpg"/></div>
-</span></div>
+	<span id="podcastPic">
+		<span>
+			<img class="Arrow" id="leftArrow" src="pic/larrow.jpg">
+			<img class="miniPic" id="miniLeft" src="Pic/AriShaffirSkepticTank.jpg">
+			<img id="imgCarousel" src="Pic/BillBurrMMPodcast.jpg">
+			<img class="miniPic" id="miniRight" src="Pic/ChampsPodcast.jpg">
+			<img class="Arrow" id="rightArrow" src="pic/rarrow.jpg">
+		</span>
+		
+	</span>
+</div>
+<img class="bottomLeft" src="Pic/GSWEmblem.jpg" >
 </body>
-
-<!-- script element should be after body but *before* end html -->
-<!-- review xml requirements, all documents must have exactly one top level element ('html' in this case) -->
-
 </html>
 
 <script>
@@ -114,7 +134,7 @@ I've coordinated the maintenance, repair as well as designed and implemented  mo
 
 
 
-// TODO: move scripts into a seperate directory and import them
+
 //Execute JavaScript after html is downloaded
 $(document).ready(function() {
 	
@@ -124,17 +144,129 @@ $(document).ready(function() {
 		$(this).fadeTo("slow", 0);
 	},
 		function(){
-		$(this).fadeTo("fast",1);
+		$(this).fadeTo("fast", 1);
 	});
 
 	//get top table position
 	var x = $("table#topTable").position();
-	//set top table position equal to bottom table
+	//set bottom table position equal to top table
 	$("table#bottomTable").css({"left":x.left,"top":x.top});
+	console.log(x.left+"   and    "+x.top)
 	
-	//array of pictures
-	var podcast = ["Pic/AriShaffirSkepticTank.jpg", "Pic/BillBurrMMPodcast.jpg","Pic/ChampsPodcast.jpg"];
+	
+	//array of pictures plus position identifier
+	var podcastArray =[['miniLeft',0] ,["imgCarousel",1],["miniRight",2]];
+	// animation effect set here
+	var speed=500, fadeOpacity=.25, picHeight =100, picWidth=100; 
+	$("img#rightArrow").click(function(){
+		 //set animate destination characteristics
+
+		for (var pos=0; pos < podcastArray.length; pos++) {
+			var sizeH =0, sizeW =0, Vmove =0, Hmove=0, updatedPosition =0 ;
+			//position 0 move
+			 if (podcastArray[pos][1]===0) {	 	
+				fadeOpacity=1;
+				sizeH = picHeight *2;
+				sizeW = picWidth *2;
+				Vmove = 0;
+				Hmove = 100;
+				podcastArray[pos][1]=1;
+				
+				}
+			//position 1 move
+			else if (podcastArray[pos][1]===1) {
+				fadeOpacity=.25;
+				sizeH=picHeight;
+				sizeW=picWidth;
+				Vmove = -100;
+				Hmove = 0;
+				podcastArray[pos][1]=2;
+			
+				}
+			//position 2
+			else if (podcastArray[pos][1]===2){
+				fadeOpacity=.25;
+				sizeH=picHeight;
+				sizeW=picWidth;
+				Vmove = 100;
+				Hmove = -100;
+				
+				podcastArray[pos][1]=0;
+				
+				}		
+			
+			//animate selected 
+			$("img#"+podcastArray[pos]).animate({
+			//css properties
+				opacity:fadeOpacity,
+				top: "+="+Vmove+"px",
+				left:"+="+Hmove+"px",
+				height: sizeH+"px",
+				width: sizeW+"px"
+				}
+			,speed);
+		
+		//update picture position
+		//updatedPosition=pos+1;
+		//podcastArray[pos][1]=updatedPosition%3;
+			
+	}
+
 });
+$("img#leftArrow").click(function(){
+		 //set animate destination characteristics
+		for (var pos=0; pos < podcastArray.length; pos++) {
+
+			
+			var sizeH =0, sizeW =0, Vmove =0, Hmove=0, updatedPosition =0 ;
+			
+			//position 0 move
+			 if (podcastArray[pos][1]===0) {	 	
+				fadeOpacity=.25;
+				sizeH = picHeight;
+				sizeW = picWidth;
+				Vmove = -100;
+				Hmove = 100;
+				podcastArray[pos][1]=2
+				}
+			//position 1 move
+			else if (podcastArray[pos][1]===1) {
+				fadeOpacity=.25;
+				sizeH=picHeight;
+				sizeW=picWidth;
+				Vmove = 0;
+				Hmove = -100;
+				podcastArray[pos][1]=0
+				}
+			//position 2 move
+			else if (podcastArray[pos][1]===2){
+				fadeOpacity=1;
+				sizeH=picHeight *2;
+				sizeW=picWidth *2;
+				Vmove = 100;
+				Hmove = 0;
+				
+				podcastArray[pos][1]=1
+				}
+				
+		//animate selected 
+		$("img#"+podcastArray[pos]).animate({
+		//css properties
+				opacity:fadeOpacity,
+				left:"+="+Hmove+"px",
+				top: "+="+Vmove+"px",
+				height: sizeH+"px",
+				width: sizeW+"px"
+				}
+			,speed);
+	}
+		//update picture position
+		//updatedPosition=pos+1;
+		//podcastArray[pos][1]=updatedPosition%3;
+});
+	
+});
+	
 
 
 
